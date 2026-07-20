@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bora Jogar?</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>VAMU XOGA?</h1>
+
+        <p>
+            Escolha um jogo clicando na imagem,
+            depois selecione a data e o horário.
+        </p>
+
+        <form id="gameForm">
+
+            <h2>Escolha o jogo</h2>
+
+            <div class="games">
+
+                <div class="game-card" data-game="Minecraft">
+
+                    <img src="https://i.pinimg.com/736x/7f/c4/9c/7fc49c4adbc07dfa36156c131d4c4f7a.jpg">
+
+                    <span>Minecraft</span>
+
+                </div>
+
+                <div class="game-card" data-game="Valorant">
+
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b3e97f2-7e29-44fe-80a9-cd068e923cc7/dduxd55-c9d14592-a876-45ef-b3df-5494462865b8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85YjNlOTdmMi03ZTI5LTQ0ZmUtODBhOS1jZDA2OGU5MjNjYzcvZGR1eGQ1NS1jOWQxNDU5Mi1hODc2LTQ1ZWYtYjNkZi01NDk0NDYyODY1YjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3sCcOx7NG-Mszer64OZiGEUWYwcb7nHlJ6G7ibJQ58A">
+
+                    <span>Valorant</span>
+
+                </div>
+
+                <div class="game-card" data-game="Fortnite">
+
+                    <img src="https://i.ytimg.com/vi/adGdyCdvKz4/maxresdefault.jpg">
+
+                    <span>Fortnite</span>
+
+                </div>
+
+                <div class="game-card" data-game="Roblox">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Roblox_Logo_2025.png/250px-Roblox_Logo_2025.png">
+
+                    <span>Roblox</span>
+
+                </div>
+
+                <div class="game-card" data-game="GTA V">
+
+                    <img src="https://www.igrandtheftauto.com/content/images/gta5-logo.png">
+
+                    <span>GTA V</span>
+
+                </div>
+
+                <div class="game-card" data-game="Counter Strike 2">
+
+                    <img src="https://marketplace.logi.com/resources/12/cs2_logo_5_E2_fecce4474c.png">
+
+                    <span>Counter Strike 2</span>
+
+                </div>
+
+            </div>
+
+            <input
+                type="hidden"
+                id="game"
+                required>
+
+            <div class="inputs">
+
+                <div>
+
+                    <label>DIA NEH FIH</label>
+
+                    <input
+                        type="date"
+                        id="data"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label>ORA TAMBE</label>
+
+                    <input
+                        type="time"
+                        id="hora"
+                        required>
+
+                </div>
+
+            </div>
+
+            <button id="botao">
+
+                <span id="textoBotao">
+
+                    Enviar Convite
+
+                </span>
+
+            </button>
+
+        </form>
+
+        <div id="mensagem"></div>
+
+        <div id="gifContainer">
+
+    <img
+        src="gif/sucesso.gif"
+        id="gifSucesso"
+        alt="Sucesso">
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
